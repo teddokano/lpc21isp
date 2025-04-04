@@ -1212,7 +1212,9 @@ void ReceiveComPort(ISP_ENVIRONMENT *IspEnvironment,
 {
     unsigned long tmp_realsize;
     unsigned long nr_of_0x0A = 0;
+#pragma GCC diagnostic ignored "-Wunused-but-set-variable"
     unsigned long nr_of_0x0D = 0;
+#pragma GCC diagnostic warning "-Wunused-but-set-variable"
     int eof = 0;
     unsigned long p;
     unsigned char *Answer;
